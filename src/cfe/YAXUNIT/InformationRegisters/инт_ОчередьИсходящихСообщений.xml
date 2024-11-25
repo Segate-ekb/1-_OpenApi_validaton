@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<InformationRegister uuid="1252db83-c806-421b-b4e6-d2e9d4855771">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.инт_ОчередьИсходящихСообщений" category="Record">
+				<xr:TypeId>edf4d499-b667-4a8d-9921-8a9f5e510488</xr:TypeId>
+				<xr:ValueId>47e41ff2-7a02-4c0b-a279-b8c301930969</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.инт_ОчередьИсходящихСообщений" category="Manager">
+				<xr:TypeId>5d69cab3-1b88-4c55-a5f1-37a5369c4e41</xr:TypeId>
+				<xr:ValueId>8a56233c-6181-49b0-90aa-eab8a413b29d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.инт_ОчередьИсходящихСообщений" category="Selection">
+				<xr:TypeId>e8459d09-4610-481d-bbdb-f284a0b00935</xr:TypeId>
+				<xr:ValueId>8bffae39-08bc-48b7-b454-a9e1398b48e1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.инт_ОчередьИсходящихСообщений" category="List">
+				<xr:TypeId>ffffd16c-e30b-4726-945f-4dc6f3ee2e52</xr:TypeId>
+				<xr:ValueId>f7ef2a41-25bc-4c1c-b473-7a4875706439</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.инт_ОчередьИсходящихСообщений" category="RecordSet">
+				<xr:TypeId>2c5da0b8-8f90-4fbb-81f9-770da98f6bac</xr:TypeId>
+				<xr:ValueId>ad062604-0410-4495-ab6d-2352b95a9505</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.инт_ОчередьИсходящихСообщений" category="RecordKey">
+				<xr:TypeId>35e508ae-6878-4e99-b3a5-ada613a8c03e</xr:TypeId>
+				<xr:ValueId>5a8112b2-685e-455f-b5a3-189b44dc9930</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.инт_ОчередьИсходящихСообщений" category="RecordManager">
+				<xr:TypeId>a59253a1-bf59-4eb0-bcc4-3c9508b9403a</xr:TypeId>
+				<xr:ValueId>252b1eeb-3f35-4e6c-bfbd-a84f224e59cb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>инт_ОчередьИсходящихСообщений</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f8131fe0-ea44-4767-b660-72c87877ea4d</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

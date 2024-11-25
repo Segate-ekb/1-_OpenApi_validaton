@@ -1,0 +1,10 @@
+{
+    "gherkin-autocomplete.featureLibraries": [
+        "features"
+    ],
+    "gherkin-autocomplete.srcBslPath": [
+        "features"
+    ],
+    "git.ignoreLimitWarning": true,
+
+}

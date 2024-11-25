@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="e4459a0d-9087-4a7c-9cfa-e0fcebd00e46">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.инт_Подписчики" category="Object">
+				<xr:TypeId>aefc9d7e-8b0c-4877-b400-20eb94b59d82</xr:TypeId>
+				<xr:ValueId>7c9d0070-9683-4dd2-92bb-5e12b8195892</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.инт_Подписчики" category="Ref">
+				<xr:TypeId>48792041-692b-40f8-a670-559a36b99726</xr:TypeId>
+				<xr:ValueId>391769a2-a1a6-47bd-8677-a26665d16e71</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.инт_Подписчики" category="Selection">
+				<xr:TypeId>82b2f7a5-e4a2-4d92-9cf5-0ea391559fef</xr:TypeId>
+				<xr:ValueId>07a001c2-96f7-4f73-8c2f-6b8651bc6ee9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.инт_Подписчики" category="List">
+				<xr:TypeId>42920a27-7d08-4fdb-8d5b-308d2711f74c</xr:TypeId>
+				<xr:ValueId>c52eec56-b287-443d-b514-b6ae06381ab1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.инт_Подписчики" category="Manager">
+				<xr:TypeId>56776012-4a19-4f6c-a54a-12eaf8249d88</xr:TypeId>
+				<xr:ValueId>f54ca483-d49e-4812-976c-3026cf82617e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>инт_Подписчики</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>1a14e96e-ac94-4093-a548-ca10aa62174d</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

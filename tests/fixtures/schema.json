@@ -1,0 +1,151 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Sample API",
+        "description": "This is a sample API",
+        "version": "1.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "simple_string": {
+                "type": "string"
+            },
+            "simple_number": {
+                "type": "number"
+            },
+            "array":{
+                "type": "array",
+                "items":{
+                    "type": "string"
+                }
+            },
+            "object": {
+                "type": "object",
+                "required": [
+                    "required"
+                ],
+                "description": "object description",
+                "properties": {
+                    "ref": {
+                        "$ref": "#/components/schemas/simple_string"
+                    },
+                    "required": {
+                        "type": "string"
+                    },
+                    "nested_object":{
+                        "$ref": "#/components/schemas/object"
+                    },
+                    "nested_array":{
+                        "$ref": "#/components/schemas/array"
+                    }
+                }
+            },
+            "strings":{
+                "type": "object",
+                "properties": {
+                    "string": {
+                        "type": "string"
+                    },
+                    "enum": {
+                        "type": "string",
+                        "enum": [
+                            "enum1",
+                            "enum2"
+                        ]
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "date-time": {
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "uri": {
+                        "type": "string",
+                        "format": "uri"
+                    },
+                    "uuid": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "ipv4": {
+                        "type": "string",
+                        "format": "ipv4"
+                    },
+                    "ipv6": {
+                        "type": "string",
+                        "format": "ipv6"
+                    },
+                    "base64": {
+                        "type": "string",
+                        "format": "byte"
+                    },
+                    "binary": {
+                        "type": "string",
+                        "format": "binary"
+                    },
+                    "pattern": {
+                        "type": "string",
+                        "pattern": "(\\+)?([- ()]?\\d[- _():=+]?){10,14}"
+                    }
+                }
+            },
+            "numbers":{
+                "type": "object",
+                "properties": {
+                    "number":{
+                        "type": "number"
+                    },
+                    "integer":{
+                        "type": "integer"
+                    },
+                    "minmax":{
+                        "type":"number",
+                        "minimum": 1,
+                        "maximum": 10
+                    },
+                    "exclusiveminmax":{
+                        "type": "number",
+                        "minimum": 1,
+                        "maximum": 10,
+                        "exclusiveMinimum": true,
+                        "exclusiveMaximum": true
+                    },
+                    "multipleOf":{
+                        "type": "number",
+                        "multipleOf": 10
+                    }
+                }
+            },
+            "arrays":{
+                "type": "object",
+                "properties": {
+                    "simple_array":{
+                        "type": "array"
+                    },
+                    "unique":{
+                        "type": "array",
+                        "uniqueItems": true
+                    },
+                    "minmax":{
+                        "type": "array",
+                        "minItems": 2,
+                        "maxItems": 3
+                    },
+                    "strict_type":{
+                        "type": "array",
+                        "items":{
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

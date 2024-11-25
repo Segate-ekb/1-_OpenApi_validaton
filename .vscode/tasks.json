@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run current feature in 1C:Enterprise",
+            "type": "shell",
+            "command": "vrunner vanessa --path \"${workspaceFolder}\\${relativeFile}\"",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run current feature in 1C:Enterprise + WAIT",
+            "type": "shell",
+            "command": "SET VANESSA_VANESSASHUTDOWN=0 && SET VANESSA_CLOSETESTCLIENT=0 && vrunner vanessa --path \"${workspaceFolder}\\${relativeFile}\"",
+            "problemMatcher": []
+        },
+        {
+            "label": "Load current feature in 1C:Enterprise + wait",
+            "type": "shell",
+            "command": "SET VANESSA_VANESSARUN=0 && SET VANESSA_VANESSASHUTDOWN=0 && SET VANESSA_CLOSETESTCLIENT=0 && vrunner vanessa --path \"${workspaceFolder}\\${relativeFile}\"",
+            "problemMatcher": []
+        },
+        {
+            "label": "echo file names",
+            "type": "shell",
+            "command": "echo ${workspaceFolder} - ${fileDirname} - ${relativeFile} - ${workspaceFolder}\\${relativeFile} - ${file}",
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<InformationRegister uuid="77753570-2fa0-4bd6-a9c8-0df5b526f137">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.инт_СообщенияКУдалению" category="Record">
+				<xr:TypeId>4ff52784-523a-4c75-a52b-110dd052f9c7</xr:TypeId>
+				<xr:ValueId>776a11a9-08b7-4a11-8993-548e4cd221bc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.инт_СообщенияКУдалению" category="Manager">
+				<xr:TypeId>44e10b2d-c50b-4a61-8a54-e97c93b0de82</xr:TypeId>
+				<xr:ValueId>4f127595-30cf-4de5-b1b9-b16ecc45b838</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.инт_СообщенияКУдалению" category="Selection">
+				<xr:TypeId>11140dbb-8619-48ed-987c-0ce2ba57a1c9</xr:TypeId>
+				<xr:ValueId>7c6975b4-ad82-4956-93b2-ad237ea42252</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.инт_СообщенияКУдалению" category="List">
+				<xr:TypeId>cc550f7e-9202-47ee-967b-bc1724ba506b</xr:TypeId>
+				<xr:ValueId>91199501-c11b-44ba-80f7-c1a454e122b4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.инт_СообщенияКУдалению" category="RecordSet">
+				<xr:TypeId>821ebe87-6262-40cf-8b3a-5290949ab9f4</xr:TypeId>
+				<xr:ValueId>019ea6f6-5a61-447d-a763-f179b42ddca6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.инт_СообщенияКУдалению" category="RecordKey">
+				<xr:TypeId>1b3fbfed-f11c-42f5-aa2c-09551875d1ba</xr:TypeId>
+				<xr:ValueId>137ee8b8-b20b-4dd2-959d-51a6f0115f7d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.инт_СообщенияКУдалению" category="RecordManager">
+				<xr:TypeId>42b5d9ee-d8fb-4ac9-b947-bfaafe4a5d4a</xr:TypeId>
+				<xr:ValueId>26c6f001-48b5-40e6-8b64-2bc0b6e9f535</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>инт_СообщенияКУдалению</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>76274a3c-0607-45ca-808d-66c0eb10a319</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>
