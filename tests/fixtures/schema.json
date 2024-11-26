@@ -14,6 +14,12 @@
             "simple_number": {
                 "type": "number"
             },
+            "simple_integer": {
+                "type": "integer"
+            },
+            "simple_boolean": {
+                "type": "boolean"
+            },
             "array":{
                 "type": "array",
                 "items":{

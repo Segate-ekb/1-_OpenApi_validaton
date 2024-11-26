@@ -91,7 +91,7 @@
 			<CommonModule>МокитоПерехват</CommonModule>
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
-			<CommonModule>ОМ_инт_ВалидаторПакетов</CommonModule>
+			<CommonModule>ОМ_ВалидаторПакетов</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТДымовыеТесты</CommonModule>
 			<CommonModule>ЮТДымовыеТестыСлужебныйВызовСервера</CommonModule>

@@ -16,7 +16,7 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОМ_инт_ВалидаторПакетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОМ_ВалидаторПакетов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

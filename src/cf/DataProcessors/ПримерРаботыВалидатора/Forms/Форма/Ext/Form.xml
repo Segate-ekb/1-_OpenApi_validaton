@@ -14,22 +14,23 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа" id="4">
+		<UsualGroup name="ГруппаВертикальная" id="17">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
+					<v8:content>Группа вертикальная</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
+					<v8:content>Группа вертикальная</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="5"/>
+			<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="18"/>
 			<ChildItems>
 				<CheckBoxField name="Переключатель" id="11">
 					<DataPath>Переключатель</DataPath>
@@ -47,16 +48,35 @@
 						<Event name="OnChange">ПереключательПриИзменении</Event>
 					</Events>
 				</CheckBoxField>
-				<TextDocumentField name="JsonДляПроверки" id="14">
-					<DataPath>Объект.JsonДляПроверки</DataPath>
-					<ContextMenu name="JsonДляПроверкиКонтекстноеМеню" id="16"/>
-					<ExtendedTooltip name="JsonДляПроверкиРасширеннаяПодсказка" id="3"/>
-				</TextDocumentField>
-				<TextDocumentField name="СхемаOpenApi" id="6">
-					<DataPath>Объект.СхемаOpenApi</DataPath>
-					<ContextMenu name="СхемаOpenApiКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="СхемаOpenApiРасширеннаяПодсказка" id="8"/>
-				</TextDocumentField>
+				<UsualGroup name="Группа" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="5"/>
+					<ChildItems>
+						<TextDocumentField name="JsonДляПроверки" id="14">
+							<DataPath>Объект.JsonДляПроверки</DataPath>
+							<ContextMenu name="JsonДляПроверкиКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="JsonДляПроверкиРасширеннаяПодсказка" id="3"/>
+						</TextDocumentField>
+						<TextDocumentField name="СхемаOpenApi" id="6">
+							<DataPath>Объект.СхемаOpenApi</DataPath>
+							<ContextMenu name="СхемаOpenApiКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="СхемаOpenApiРасширеннаяПодсказка" id="8"/>
+						</TextDocumentField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
