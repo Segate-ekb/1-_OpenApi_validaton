@@ -23,5 +23,5 @@
       "level": "debug"
     },
     "exitCode": "./build/out/yaxunit/result.txt",
-    "projectPath": "."
+    "projectPath": "./"
   }

@@ -179,7 +179,7 @@
                         "minProperties": 2,
                         "maxProperties": 3
                     },
-                    "additional":{
+                    "additional_false":{
                         "type": "object",
                         "properties": {
                             "normal": {
@@ -187,6 +187,46 @@
                             }
                         },
                         "additionalProperties": false
+                    },
+                    "additional_true":{
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "additional_empty":{
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {}
+                    },
+                    "additional_object":{
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    },
+                    "additional_ref":{
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {
+                            "$ref": "#/components/schemas/simple_string"
+                        }
                     }
                 }
             }
