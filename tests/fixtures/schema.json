@@ -313,6 +313,70 @@
                         }
                     }
                 ]
+            },
+            "ComplexValidation": {
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    },
+                    {
+                        "allOf": [
+                            {
+                                "anyOf": [
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "typeA": {
+                                                "type": "string"
+                                            },
+                                            "valueA": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        "required": [
+                                            "typeA",
+                                            "valueA"
+                                        ]
+                                    },
+                                    {
+                                        "type": "object",
+                                        "properties": {
+                                            "typeB": {
+                                                "type": "string"
+                                            },
+                                            "valueB": {
+                                                "type": "number"
+                                            }
+                                        },
+                                        "required": [
+                                            "typeB",
+                                            "valueB"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "object",
+                                "properties": {
+                                    "status": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [
+                                    "status"
+                                ]
+                            }
+                        ]
+                    }
+                ]
             }
         }
     }
