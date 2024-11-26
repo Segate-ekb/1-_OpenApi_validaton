@@ -17,7 +17,7 @@
       {
         "name": "YAXUNIT",
         "initMethod": "fromSource",
-        "path": "src/cfe/YAXUnit",
+        "path": "src/cfe/YAXUNIT",
         "stages": [
           "yaxunit"
         ]
