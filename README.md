@@ -1,6 +1,7 @@
 # Валидатор openApi контрактов для 1С
 
-[![Chat on Telegram DevOps_onec](https://img.shields.io/badge/chat-Telegram-brightgreen.svg)](https://t.me/DevOps_onec)
+
+[![Chat on Telegram DevOps_onec](https://img.shields.io/badge/DevOps_в_1с-channel-brightgreen.svg?logo=telegram)](https://t.me/DevOps_onec)
 [![GitHub release](https://img.shields.io/github/release/Segate-ekb/1c_OpenApi_validation.svg)](https://github.com/Segate-ekb/1c_OpenApi_validation/releases)
 [![Статус порога качества](https://sonar.1cdevelopers.ru/api/project_badges/measure?project=1c_openApi_validation&metric=alert_status&token=sqb_a6afeb91a4cb1185085025558c3c520f03600a43)](https://sonar.1cdevelopers.ru/dashboard?id=1c_openApi_validation)
 [![Рейтинг сопровождаемости](https://sonar.1cdevelopers.ru/api/project_badges/measure?project=1c_openApi_validation&metric=sqale_rating&token=sqb_a6afeb91a4cb1185085025558c3c520f03600a43)](https://sonar.1cdevelopers.ru/dashboard?id=1c_openApi_validation)
