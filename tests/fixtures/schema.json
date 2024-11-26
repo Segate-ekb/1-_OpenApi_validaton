@@ -20,9 +20,9 @@
             "simple_boolean": {
                 "type": "boolean"
             },
-            "array":{
+            "array": {
                 "type": "array",
-                "items":{
+                "items": {
                     "type": "string"
                 }
             },
@@ -39,15 +39,15 @@
                     "required": {
                         "type": "string"
                     },
-                    "nested_object":{
+                    "nested_object": {
                         "$ref": "#/components/schemas/object"
                     },
-                    "nested_array":{
+                    "nested_array": {
                         "$ref": "#/components/schemas/array"
                     }
                 }
             },
-            "strings":{
+            "strings": {
                 "type": "object",
                 "properties": {
                     "string": {
@@ -107,63 +107,63 @@
                     }
                 }
             },
-            "numbers":{
+            "numbers": {
                 "type": "object",
                 "properties": {
-                    "number":{
+                    "number": {
                         "type": "number"
                     },
-                    "integer":{
+                    "integer": {
                         "type": "integer"
                     },
-                    "minmax":{
-                        "type":"number",
+                    "minmax": {
+                        "type": "number",
                         "minimum": 1,
                         "maximum": 10
                     },
-                    "exclusiveminmax":{
+                    "exclusiveminmax": {
                         "type": "number",
                         "minimum": 1,
                         "maximum": 10,
                         "exclusiveMinimum": true,
                         "exclusiveMaximum": true
                     },
-                    "multipleOf":{
+                    "multipleOf": {
                         "type": "number",
                         "multipleOf": 10
                     }
                 }
             },
-            "arrays":{
+            "arrays": {
                 "type": "object",
                 "properties": {
-                    "simple_array":{
+                    "simple_array": {
                         "type": "array"
                     },
-                    "unique":{
+                    "unique": {
                         "type": "array",
                         "uniqueItems": true
                     },
-                    "minmax":{
+                    "minmax": {
                         "type": "array",
                         "minItems": 2,
                         "maxItems": 3
                     },
-                    "strict_type":{
+                    "strict_type": {
                         "type": "array",
-                        "items":{
+                        "items": {
                             "type": "string"
                         }
                     }
                 }
             },
-            "objects":{
+            "objects": {
                 "type": "object",
                 "properties": {
-                    "object":{
+                    "object": {
                         "type": "object"
                     },
-                    "required":{
+                    "required": {
                         "type": "object",
                         "required": [
                             "required"
@@ -174,12 +174,12 @@
                             }
                         }
                     },
-                    "minmax":{
+                    "minmax": {
                         "type": "object",
                         "minProperties": 2,
                         "maxProperties": 3
                     },
-                    "additional_false":{
+                    "additional_false": {
                         "type": "object",
                         "properties": {
                             "normal": {
@@ -188,7 +188,7 @@
                         },
                         "additionalProperties": false
                     },
-                    "additional_true":{
+                    "additional_true": {
                         "type": "object",
                         "properties": {
                             "normal": {
@@ -197,7 +197,7 @@
                         },
                         "additionalProperties": true
                     },
-                    "additional_empty":{
+                    "additional_empty": {
                         "type": "object",
                         "properties": {
                             "normal": {
@@ -206,7 +206,7 @@
                         },
                         "additionalProperties": {}
                     },
-                    "additional_object":{
+                    "additional_object": {
                         "type": "object",
                         "properties": {
                             "normal": {
@@ -217,7 +217,7 @@
                             "type": "string"
                         }
                     },
-                    "additional_ref":{
+                    "additional_ref": {
                         "type": "object",
                         "properties": {
                             "normal": {
@@ -230,40 +230,84 @@
                     }
                 }
             },
-            "oneOf":{
+            "OneOf": {
                 "oneOf": [
-                    {
-                        "type": "string"
-                    },
-                    {
-                        "$ref": "#/components/schemas/simple_string"
-                    }
-                ]
-            },
-            "anyOf":{
-                "anyOf": [
-                    {
-                        "type": "string"
-                    },
-                    {
-                        "type": "number"
-                    }
-                ]
-            },
-            "allOf":{
-                "allOf": [
                     {
                         "type": "object",
                         "properties": {
-                            "prop1": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "valueA": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "valueA"
+                        ]
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": "string"
+                            },
+                            "valueB": {
+                                "type": "number"
+                            }
+                        },
+                        "required": [
+                            "valueB"
+                        ]
+                    }
+                ]
+            },
+            "AnyOf": {
+                "anyOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "fieldA": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": {
+                            "type": "number"
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "fieldB": {
+                                "type": "number"
+                            }
+                        },
+                        "additionalProperties": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            },
+            "AllOf": {
+                "allOf": [
+                    {
+                        "type": "object",
+                        "required": [
+                            "commonField"
+                        ],
+                        "properties": {
+                            "commonField": {
                                 "type": "string"
                             }
                         }
                     },
                     {
                         "type": "object",
+                        "required": [
+                            "additionalField"
+                        ],
                         "properties": {
-                            "prop2": {
+                            "additionalField": {
                                 "type": "number"
                             }
                         }
