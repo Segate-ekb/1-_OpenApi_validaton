@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/firstBitSemenovskaya/jenkins-lib/master/resources/schema.json",
+  "v8version": "8.3.24.1548",
+  "edtVersion": "2024.1.2",
+  "secrets": {},
+  "stages": {
+    "sonarqube": true,
+    "syntaxCheck": true,
+    "initSteps": true,
+    "yaxunit": true,
+    "edtValidate": true
+  },
+  "initInfobase": {
+    "initMethod": "fromSource",
+    "runMigration": true,
+    "extensions": [
+      {
+        "name": "YAXUNIT",
+        "initMethod": "fromSource",
+        "path": "src/cfe/YAXUnit",
+        "stages": [
+          "yaxunit"
+        ]
+      }
+    ]
+  },
+  "syntaxCheck": {
+    "groupErrorsByMetadata": true,
+    "pathToJUnitReport": "./build/out/jUnit/syntax.xml",
+    "exceptionFile": "./tools/syntax-check-exception-file.txt",
+    "checkModes": [
+      "-ThinClient",
+      "-Server",
+      "-ExtendedModulesCheck"
+    ]
+  },
+  "smoke": {
+    "publishToAllureReport": true
+  },
+  "yaxunit": {
+    "publishToAllureReport": true,
+    "configPath": "./tools/yaxunit-jenkins-lib.json"
+  },
+  "sonarqube": {
+    "waitForQualityGate": true
+  },
+  "resultsTransform": {
+    "transformer": "edt-ripper"
+  }
+}
