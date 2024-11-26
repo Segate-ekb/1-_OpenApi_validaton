@@ -59,7 +59,7 @@
 			<Subsystem>ЮТДвижок</Subsystem>
 			<Subsystem>ЮТПодключаемыеМодули</Subsystem>
 			<Subsystem>ЮТПубличный</Subsystem>
-			<Subsystem>инт_Тесты</Subsystem>
+			<Subsystem>Тесты</Subsystem>
 			<CommonPicture>ЮТЗапустить</CommonPicture>
 			<CommonPicture>ЮТИмпорт</CommonPicture>
 			<CommonPicture>ЮТНастройки</CommonPicture>
