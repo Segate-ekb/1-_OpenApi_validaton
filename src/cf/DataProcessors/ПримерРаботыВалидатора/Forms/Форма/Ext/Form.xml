@@ -32,22 +32,49 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="18"/>
 			<ChildItems>
-				<CheckBoxField name="Переключатель" id="11">
-					<DataPath>Переключатель</DataPath>
-					<TitleLocation>None</TitleLocation>
-					<CheckBoxType>Tumbler</CheckBoxType>
-					<EditFormat>
+				<UsualGroup name="ГруппаЭлементыУправления" id="22">
+					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>БЛ='Валидный JSON'; БИ='Невалидный JSON'</v8:content>
+							<v8:content>Группа элементы управления</v8:content>
 						</v8:item>
-					</EditFormat>
-					<ContextMenu name="ПереключательКонтекстноеМеню" id="12"/>
-					<ExtendedTooltip name="ПереключательРасширеннаяПодсказка" id="13"/>
-					<Events>
-						<Event name="OnChange">ПереключательПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа элементы управления</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЭлементыУправленияРасширеннаяПодсказка" id="23"/>
+					<ChildItems>
+						<CheckBoxField name="Переключатель" id="11">
+							<DataPath>Переключатель</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<CheckBoxType>Tumbler</CheckBoxType>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>БЛ='Валидный JSON'; БИ='Невалидный JSON'</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="ПереключательКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ПереключательРасширеннаяПодсказка" id="13"/>
+							<Events>
+								<Event name="OnChange">ПереключательПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="ИмяСхемы" id="19">
+							<DataPath>ИмяСхемы</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ИмяСхемыКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ИмяСхемыРасширеннаяПодсказка" id="21"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="Группа" id="4">
 					<Title>
 						<v8:item>
@@ -69,11 +96,17 @@
 							<DataPath>Объект.JsonДляПроверки</DataPath>
 							<ContextMenu name="JsonДляПроверкиКонтекстноеМеню" id="16"/>
 							<ExtendedTooltip name="JsonДляПроверкиРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">JsonДляПроверкиПриИзменении</Event>
+							</Events>
 						</TextDocumentField>
 						<TextDocumentField name="СхемаOpenApi" id="6">
 							<DataPath>Объект.СхемаOpenApi</DataPath>
 							<ContextMenu name="СхемаOpenApiКонтекстноеМеню" id="7"/>
 							<ExtendedTooltip name="СхемаOpenApiРасширеннаяПодсказка" id="8"/>
+							<Events>
+								<Event name="OnChange">СхемаOpenApiПриИзменении</Event>
+							</Events>
 						</TextDocumentField>
 					</ChildItems>
 				</UsualGroup>
@@ -96,6 +129,21 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяСхемы" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя схемы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
