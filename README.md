@@ -4,6 +4,7 @@
 [![GitHub release](https://img.shields.io/github/release/Segate-ekb/1c_OpenApi_validation.svg)](https://github.com/Segate-ekb/1c_OpenApi_validation/releases)
 [![Статус порога качества](https://sonar.1cdevelopers.ru/api/project_badges/measure?project=1c_openApi_validation&metric=alert_status&token=sqb_a6afeb91a4cb1185085025558c3c520f03600a43)](https://sonar.1cdevelopers.ru/dashboard?id=1c_openApi_validation)
 [![Рейтинг сопровождаемости](https://sonar.1cdevelopers.ru/api/project_badges/measure?project=1c_openApi_validation&metric=sqale_rating&token=sqb_a6afeb91a4cb1185085025558c3c520f03600a43)](https://sonar.1cdevelopers.ru/dashboard?id=1c_openApi_validation)
+[![Статья на инфостарт](./doc/infostart.svg)](https://infostart.ru/1c/tools/2246023/)
 
 В современном мире OpenAPI (Swagger) является стандартом для описания RESTful API.
 Данная подсистема позволит вам проверять входящие и исходящие пакеты данных на соответствие контракту OpenAPI.
