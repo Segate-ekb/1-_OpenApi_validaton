@@ -1,5 +1,5 @@
 .env
-env.json
+
 build/
 allure-report/
 oscript_modules/
