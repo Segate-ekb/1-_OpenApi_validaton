@@ -86,23 +86,12 @@
 			<CommonTemplate>ЮТYaxUnitAddIn</CommonTemplate>
 			<CommonTemplate>ЮТИнформацияОбОшибке</CommonTemplate>
 			<CommonTemplate>ЮТОписаниеМетаданных</CommonTemplate>
-			<CommonModule>ГенераторТестовыхДанных</CommonModule>
-			<CommonModule>инт_ВалидаторПакетов</CommonModule>
-			<CommonModule>инт_ОбработкаВходящихПотоков</CommonModule>
 			<CommonModule>Мокито</CommonModule>
 			<CommonModule>МокитоОбучение</CommonModule>
 			<CommonModule>МокитоПерехват</CommonModule>
 			<CommonModule>МокитоПроверки</CommonModule>
 			<CommonModule>МокитоСлужебный</CommonModule>
 			<CommonModule>ОМ_инт_ВалидаторПакетов</CommonModule>
-			<CommonModule>ОМ_инт_ОбработкаВходящихОбращенийHTTP</CommonModule>
-			<CommonModule>ОМ_инт_ОбработкаВходящихПотоков</CommonModule>
-			<CommonModule>РС_инт_ОчередьВходящихСообщений_ММ</CommonModule>
-			<CommonModule>РС_инт_ОчередьИсходящихСообщений_ММ</CommonModule>
-			<CommonModule>РС_инт_ОчередьОтправкиИсходящихСообщений_ММ</CommonModule>
-			<CommonModule>РС_инт_ТекущийСтатусРассылкиСообщений_ММ</CommonModule>
-			<CommonModule>СПР_инт_Подписчики_ММ</CommonModule>
-			<CommonModule>СПР_инт_ПотокиДанных_ММ</CommonModule>
 			<CommonModule>ЮТАсинхроннаяОбработкаСлужебныйКлиент</CommonModule>
 			<CommonModule>ЮТДымовыеТесты</CommonModule>
 			<CommonModule>ЮТДымовыеТестыСлужебныйВызовСервера</CommonModule>
@@ -196,17 +185,12 @@
 			<CommonModule>ЮТФильтрацияСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебный</CommonModule>
 			<CommonModule>ЮТЧитательСлужебныйВызовСервера</CommonModule>
-			<Catalog>инт_Подписчики</Catalog>
-			<Catalog>инт_ПотокиДанных</Catalog>
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
 			<DataProcessor>ЮТКонструкторОбъектаXDTO</DataProcessor>
 			<DataProcessor>ЮТКонструкторТестовыхДанных</DataProcessor>
 			<DataProcessor>ЮТЮнитТесты</DataProcessor>
-			<InformationRegister>инт_ОчередьВходящихСообщений</InformationRegister>
-			<InformationRegister>инт_ОчередьИсходящихСообщений</InformationRegister>
-			<InformationRegister>инт_СообщенияКУдалению</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

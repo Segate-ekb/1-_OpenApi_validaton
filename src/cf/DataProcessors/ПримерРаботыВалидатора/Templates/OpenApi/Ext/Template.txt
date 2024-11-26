@@ -1,0 +1,88 @@
+﻿{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Sample API",
+        "description": "This is a sample API",
+        "version": "1.0.0"
+    },
+    "paths": {},
+    "components": {
+        "schemas": {
+            "complex_object": {
+                "type": "object",
+                "required": [
+                    "id",
+                    "name",
+                    "email",
+                    "address",
+                    "phoneNumbers",
+                    "metadata"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "format": "uuid"
+                    },
+                    "name": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 100
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email"
+                    },
+                    "age": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 120
+                    },
+                    "address": {
+                        "type": "object",
+                        "required": [
+                            "street",
+                            "city",
+                            "postalCode"
+                        ],
+                        "properties": {
+                            "street": {
+                                "type": "string"
+                            },
+                            "city": {
+                                "type": "string"
+                            },
+                            "postalCode": {
+                                "type": "string",
+                                "pattern": "^\\d{5}(-\\d{4})?$"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "phoneNumbers": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "pattern": "^(\\+)?([- ()]?\\d[- _():=+]?){10,14}$"
+                        },
+                        "minItems": 1,
+                        "uniqueItems": true
+                    },
+                    "metadata": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                            "created": {
+                                "type": "string",
+                                "format": "date-time"
+                            },
+                            "updated": {
+                                "type": "string",
+                                "format": "date-time"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

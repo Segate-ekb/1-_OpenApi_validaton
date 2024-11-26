@@ -32,8 +32,13 @@
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Конфигурация</Name>
-			<Synonym/>
+			<Name>ВалидаторПакетов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валидатор пакетов</v8:content>
+				</v8:item>
+			</Synonym>
 			<Comment/>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_24</ConfigurationExtensionCompatibilityMode>
@@ -44,7 +49,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor/>
-			<Version/>
+			<Version>0.0.0.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -241,6 +246,11 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>ВалидаторПакетов</Subsystem>
+			<CommonModule>ВалидаторПакетов</CommonModule>
+			<CommonModule>ВалидаторПакетовПовтИсп</CommonModule>
+			<DataProcessor>ВалидаторПакетов</DataProcessor>
+			<DataProcessor>ПримерРаботыВалидатора</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

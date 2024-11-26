@@ -54,6 +54,11 @@
                             "enum2"
                         ]
                     },
+                    "minmax": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 10
+                    },
                     "email": {
                         "type": "string",
                         "format": "email"
@@ -143,6 +148,39 @@
                         "items":{
                             "type": "string"
                         }
+                    }
+                }
+            },
+            "objects":{
+                "type": "object",
+                "properties": {
+                    "object":{
+                        "type": "object"
+                    },
+                    "required":{
+                        "type": "object",
+                        "required": [
+                            "required"
+                        ],
+                        "properties": {
+                            "required": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "minmax":{
+                        "type": "object",
+                        "minProperties": 2,
+                        "maxProperties": 3
+                    },
+                    "additional":{
+                        "type": "object",
+                        "properties": {
+                            "normal": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
                     }
                 }
             }
