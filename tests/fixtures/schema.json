@@ -229,6 +229,46 @@
                         }
                     }
                 }
+            },
+            "oneOf":{
+                "oneOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "$ref": "#/components/schemas/simple_string"
+                    }
+                ]
+            },
+            "anyOf":{
+                "anyOf": [
+                    {
+                        "type": "string"
+                    },
+                    {
+                        "type": "number"
+                    }
+                ]
+            },
+            "allOf":{
+                "allOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "prop1": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    {
+                        "type": "object",
+                        "properties": {
+                            "prop2": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                ]
             }
         }
     }
