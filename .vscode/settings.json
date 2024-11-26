@@ -6,5 +6,9 @@
         "features"
     ],
     "git.ignoreLimitWarning": true,
+    "sonarlint.connectedMode.project": {
+        "connectionId": "https://sonar.1cdevelopers.ru",
+        "projectKey": "1c_openApi_validation"
+    },
 
 }
