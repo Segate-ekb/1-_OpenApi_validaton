@@ -381,9 +381,18 @@
             "Not":{
                 "type": "string",
                 "not": {
-                    "type":"string",
                     "enum": ["test"]
                 }
+            },
+            "different_types_enum": {
+                "nullable": true,
+                "enum": [
+                    "string",
+                    1,
+                    1.1,
+                    true,
+                    null
+                ]
             }
         }
     }
