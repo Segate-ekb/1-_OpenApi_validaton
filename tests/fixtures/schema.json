@@ -377,6 +377,13 @@
                         ]
                     }
                 ]
+            },
+            "Not":{
+                "type": "string",
+                "not": {
+                    "type":"string",
+                    "enum": ["test"]
+                }
             }
         }
     }
