@@ -96,9 +96,6 @@
 							<DataPath>Объект.JsonДляПроверки</DataPath>
 							<ContextMenu name="JsonДляПроверкиКонтекстноеМеню" id="16"/>
 							<ExtendedTooltip name="JsonДляПроверкиРасширеннаяПодсказка" id="3"/>
-							<Events>
-								<Event name="OnChange">JsonДляПроверкиПриИзменении</Event>
-							</Events>
 						</TextDocumentField>
 						<TextDocumentField name="СхемаOpenApi" id="6">
 							<DataPath>Объект.СхемаOpenApi</DataPath>
