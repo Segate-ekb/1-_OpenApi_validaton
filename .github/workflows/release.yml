@@ -17,6 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Актуализация
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.head.repo.full_name }}
+          ref: ${{ github.event.head.ref }}
+          
       - name: Установка 1С:Предприятие
         uses: 1CDevFlow/onec-setup-action@main
         with:
