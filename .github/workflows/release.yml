@@ -1,0 +1,53 @@
+name: Создание черновика релиза
+on:
+  push:
+    tags:
+      - '*'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref_name }}-${{ github.event.number }}-release
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build_artifacts:
+    name: Сборка артефактов
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Установка 1С:Предприятие
+        uses: 1CDevFlow/onec-setup-action@main
+        with:
+          type: onec
+          onec_version: 8.3.24.1548
+          cache: true
+        env: 
+          ONEC_USERNAME: ${{ secrets.ONEC_USERNAME }}
+          ONEC_PASSWORD: ${{ secrets.ONEC_PASSWORD }}
+        timeout-minutes: 10
+
+      - name: Создание пустой информационной базы
+        run: ibcmd infobase create --db-path=file-db
+        timeout-minutes: 5
+  
+      - name: Импорт из исходников
+        run: ibcmd infobase config import --db-path=file-db src/cf
+        timeout-minutes: 5
+    
+      - name: Сохрание cf
+        run: ibcmd infobase config save --db-path=file-db 1c_validator-${{ github.ref_name }}.cf
+        timeout-minutes: 5
+        
+      - name: Создание черновика релиза ${{ github.ref_name }}
+        uses: softprops/action-gh-release@v2
+        if: ${{ success() }}
+        with:
+          draft: true
+          files: '*.cf'
+          fail_on_unmatched_files: true
+          generate_release_notes: true
+          append_body: false
+          name: Версия ${{ github.ref_name }}
+          token: ${{ secrets.GITHUB_TOKEN }}
