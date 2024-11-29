@@ -393,6 +393,85 @@
                     true,
                     null
                 ]
+            },
+            "discriminator": {
+                "oneOf": [
+                    {
+                        "$ref": "#/components/schemas/A"
+                    },
+                    {
+                        "$ref": "#/components/schemas/B"
+                    },
+                    {
+                        "$ref": "#/components/schemas/C"
+                    }
+                ],
+                "discriminator": {
+                    "propertyName": "type",
+                    "mapping": {
+                        "testA": "#/components/schemas/A"
+                    }
+                }
+            },
+            "A": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "A",
+                            "testA"
+                        ]
+                    },
+                    "valueA": {
+                        "type": "string"
+                    },
+                    "commonField": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type",
+                    "valueA"
+                ]
+            },
+            "B": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "B"
+                        ]
+                    },
+                    "valueB": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "type",
+                    "valueB"
+                ]
+            },
+            "C":{
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "enum": [
+                            "C"
+                        ]
+                    },
+                    "valueC": {
+                        "type": "boolean"
+                    },
+                    "commonField": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type"
+                ]
             }
         }
     }
