@@ -472,6 +472,10 @@
                 "required": [
                     "type"
                 ]
+            },
+            "deprecated": {
+                "type": "string",
+                "deprecated": true
             }
         }
     }
