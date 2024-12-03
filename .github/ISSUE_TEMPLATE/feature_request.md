@@ -1,20 +1,16 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+name: Новая функциональность
+about: Добавление новой функциональности
+title: '[NEW]'
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+## Описание сценария (кейса) использования, применения
+<!-- В данном блоке стоит описать проблему, сценарий использования, для формирования понимания, зачем нужна функциональность -->
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Вариант реализации новой функциональности
+<!-- Можно описать вариант (-ы) реализации новой фунциональности, как видится в момент написания -->
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Дополнительная информация
+<!-- Можно добавить любую информацию, которая может быть полезной при реализации -->
