@@ -1,0 +1,31 @@
+name: '🐞 Ошибка'
+description: 'Регистрация обнаруженной ошибки'
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: textarea
+    attributes:
+      label: 'OpenApi схема'
+      description: 'Схема, проверка по которой приводит к возникновению ошибки'
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 'Проверяемый json'
+      description: 'Json, который приводит к возникновению ошибки'
+      render: json
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 'Имя пакета в схеме(Если их несколько)'
+      render: txt
+
+  - type: textarea
+    attributes:
+      label: 'Дополнительная информация'
+      description: 'Любая дополнительная информация, которая может помочь в решении проблемы'
+      render: txt
