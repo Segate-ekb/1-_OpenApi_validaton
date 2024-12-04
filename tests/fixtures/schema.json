@@ -131,6 +131,14 @@
                     "multipleOf": {
                         "type": "number",
                         "multipleOf": 10
+                    },
+                    "int32": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "int64": {
+                        "type": "integer",
+                        "format": "int64"
                     }
                 }
             },
