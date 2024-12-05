@@ -484,6 +484,18 @@
             "deprecated": {
                 "type": "string",
                 "deprecated": true
+            },
+            "nullable_property": {
+                "type": "object",
+                "required": [
+                    "property"
+                ],
+                "properties": {
+                    "property": {
+                        "type": "string",
+                        "nullable": true
+                    }
+                }
             }
         }
     }
