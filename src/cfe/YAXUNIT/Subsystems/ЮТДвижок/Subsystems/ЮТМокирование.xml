@@ -29,6 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТHTTPServiceRequest</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТHTTPСервисЗапрос</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТRecordSet</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТСообщениеСервисаИнтеграции</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
