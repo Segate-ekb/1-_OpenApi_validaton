@@ -47,7 +47,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_10</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>24.08.1</Version>
+			<Version>24.12</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -188,8 +188,10 @@
 			<DataProcessor>ЮТHTTPServiceRequest</DataProcessor>
 			<DataProcessor>ЮТHTTPСервисЗапрос</DataProcessor>
 			<DataProcessor>ЮТRecordSet</DataProcessor>
+			<DataProcessor>ЮТКонструкторДвижений</DataProcessor>
 			<DataProcessor>ЮТКонструкторОбъектаXDTO</DataProcessor>
 			<DataProcessor>ЮТКонструкторТестовыхДанных</DataProcessor>
+			<DataProcessor>ЮТСообщениеСервисаИнтеграции</DataProcessor>
 			<DataProcessor>ЮТЮнитТесты</DataProcessor>
 		</ChildObjects>
 	</Configuration>

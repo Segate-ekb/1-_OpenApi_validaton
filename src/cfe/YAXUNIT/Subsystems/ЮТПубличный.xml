@@ -60,6 +60,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТRecordSet</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТКонструкторОбъектаXDTO</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТКонструкторТестовыхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТСообщениеСервисаИнтеграции</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТЮнитТесты</xr:Item>
 			</Content>
 		</Properties>

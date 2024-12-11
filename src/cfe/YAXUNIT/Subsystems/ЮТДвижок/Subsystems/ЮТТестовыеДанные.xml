@@ -30,6 +30,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТТестовыеДанныеСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТТестовыеДанныеСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЮТТестовыеДанныеСлужебныйСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТКонструкторДвижений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТКонструкторОбъектаXDTO</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЮТКонструкторТестовыхДанных</xr:Item>
 			</Content>
