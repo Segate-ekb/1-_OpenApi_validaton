@@ -484,6 +484,37 @@
             "deprecated": {
                 "type": "string",
                 "deprecated": true
+            },
+            "mixed_types_1C": {
+                "type": "object",
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "minLength": 1
+                    },
+                    "uuid": {
+                        "type": "string",
+                        "format": "uuid",
+                        "minLength": 1
+                    },
+                    "set_of_dates": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "format": "date"
+                        },
+                        "uniqueItems": true
+                    },
+                    "set_of_uuids": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "format": "uuid"
+                        },
+                        "uniqueItems": true
+                    }
+                }
             }
         }
     }
